@@ -5,6 +5,4 @@ Youtube video how to start the game:
 
 Get free ETH on Robsten Testnet: https://faucet.ropsten.be/
 
-
-
-
+Play the Game: 
