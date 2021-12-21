@@ -104,11 +104,9 @@ contract Mystery {
 
     constructor(address _contractAddress) { //Use contract address from the quests
         _mystery = setUpMystery(_contractAddress);
-        addr = msg.sender;
     }
 
     function getQuest(string memory _answer) external returns (string memory) {
-        require(addr==msg.sender,"You are not permited to play this game. Please create a new Game.");
         mystery = _mystery.getQuest(_answer);
         return mystery;
     }
