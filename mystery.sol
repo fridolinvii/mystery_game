@@ -6,7 +6,7 @@ pragma solidity >=0.8.7 <0.9.0;
 
 contract setUpMystery {
 
-    string public mystery;
+    string public mystery = "Welcome... Please get the first quest.";
     Quest[] private quest;
 
 
@@ -64,8 +64,8 @@ contract setUpMystery {
 
         require(quest.length>0,"No Quests available");
         bytes32 sealedMessage = createHashFromAnswer(_answer);
-        // Empty answer gives first quest
-        if (bytes(_answer).length==0){
+        // Empty answer or 0 gives first quest
+        if (bytes(_answer).length==0 || createHashFromAnswer("0")==sealedMessage){
             mystery = quest[0].mystery;
         } else {
             // checke if answer is valid for one of the mistery
@@ -98,17 +98,16 @@ contract setUpMystery {
 
 contract Mystery {
 
-
-    string public mystery;
     setUpMystery  _mystery;
+    mapping(address => string) public mystery;
 
     constructor(address _contractAddress) { //Use contract address from the quests
         _mystery = setUpMystery(_contractAddress);
     }
 
     function getQuest(string memory _answer) external returns (string memory) {
-        mystery = _mystery.getQuest(_answer);
-        return mystery;
+        mystery[msg.sender] = _mystery.getQuest(_answer);
+        return mystery[msg.sender];
     }
 
 }
