@@ -5,7 +5,10 @@ I made a small free to play game on the Robsten Testnet.
 
 Get free ETH on Robsten Testnet: https://faucet.dimensions.network/
 
-Play the Game:  https://ropsten.etherscan.io/address/0xEc4ce113BBA77dFC73b1F61577105314AEDB05bF#readContract
+Play the Game:  
+- https://ropsten.etherscan.io/address/0xEc4ce113BBA77dFC73b1F61577105314AEDB05bF#readContract
+- give your answer under write, and getQuest. To get the first Quest enter: "0" or empty field
+- find the quest und read and press mystery with your ETH address
 
 Smart Contract: 0xEc4ce113BBA77dFC73b1F61577105314AEDB05bF
 
