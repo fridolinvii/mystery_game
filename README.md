@@ -24,3 +24,6 @@ To play a newly setup game, you need to deploy "Mystery" with the previously cre
 
 # Interact with Web3
 To interact with the smart contract on https://ropsten.etherscan.io/, you need to verify your contract here: https://ropsten.etherscan.io/verifyContract
+
+# Note: 
+The answer can be hidden, if instead we add the hash of the results directly instead of the results and hash it on the chain.
