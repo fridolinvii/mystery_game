@@ -30,7 +30,6 @@ To improve the security of the game the answer should be hidden.
 This can be achieved when we add the hash of the results directly instead of the results and hash it on the chain.
 E.g. This could be added in the following way:
 
-function generateSealedAnswer(string answer ) public pure returns( bytes32 sealedBid ) {
-    sealedBid = keccak256(abi.encodePacked(answer)) ;
+function generateSealedAnswer(string answer) public pure returns(bytes32 sealedBid){sealedBid=keccak256(abi.encodePacked(answer));}
     
 and remove function createHashFromAnswer(...){...}  accordingly
