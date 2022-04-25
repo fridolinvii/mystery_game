@@ -12,9 +12,6 @@ Play the Game:
 
 Smart Contract: 0xEc4ce113BBA77dFC73b1F61577105314AEDB05bF
 
-Note: In this video you see an example how to interact with the smart contract. Here you need to connect your MetaMask Robsten Testnet to Web3. 
-https://bafybeibxikpioxpkwydme7jmgblrr7rcj2slazmn2culyphcxreg457ddi.ipfs.dweb.link/
-
 
 # Set Up New game
 To set up your own game you can deploy "setUpMystery" and add new Quest with "newQuest"
