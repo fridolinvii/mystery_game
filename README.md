@@ -3,12 +3,11 @@ This is a small game programmed with a ETH smart contract, where you can either 
 
 I made a small free to play game on the Robsten Testnet.
 
-Get free ETH on Robsten Testnet: https://faucet.dimensions.network/
 
 Play the Game:  
-- https://ropsten.etherscan.io/address/0xEc4ce113BBA77dFC73b1F61577105314AEDB05bF#writeContract
+- Set up new game
 - give your answer under write, and getQuest. To get the first Quest enter: "0" or empty field
-- find the quest und read and press mystery with your ETH address
+- find the quest and read and press mystery with your ETH address
 
 Smart Contract: 0xEc4ce113BBA77dFC73b1F61577105314AEDB05bF
 
@@ -21,6 +20,7 @@ To play a newly setup game, you need to deploy "Mystery" with the previously cre
 
 # Interact with Web3
 To interact with the smart contract on https://ropsten.etherscan.io/, you need to verify your contract here: https://ropsten.etherscan.io/verifyContract
+* Note: Ropsten test net is now down. You need to find an alternative
 
 ### To Do: 
 To improve the security of the game the answer should be hidden.
